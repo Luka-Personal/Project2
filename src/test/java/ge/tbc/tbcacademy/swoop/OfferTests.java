@@ -36,6 +36,7 @@ public class OfferTests extends BaseSelenideConfig {
     @BeforeMethod(alwaysRun = true)
     public void openURL() {
         open(SWOOP_URL);
+        System.out.println("CONFLICT MAKER");
         System.out.println("CONFLICT");
     }
 

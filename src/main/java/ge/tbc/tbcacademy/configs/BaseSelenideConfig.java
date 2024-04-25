@@ -22,6 +22,7 @@ public class BaseSelenideConfig {
         browserCapabilities = options;
         browserSize = null;
         timeout=5000;
+        System.out.println("CONFLICT MAKER");
         System.out.println("CONFLICT");
     }
 
