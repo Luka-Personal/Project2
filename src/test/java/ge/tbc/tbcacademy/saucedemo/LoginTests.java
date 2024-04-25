@@ -27,6 +27,7 @@ public class LoginTests extends BaseSelenideConfig {
     @BeforeMethod(alwaysRun = true)
     public void openURL() {
         open(SAUCE_DEMO_URL);
+        System.out.println("CONFLICT 3");
     }
 
     @Test(priority = 1, description = "Checks standard user login functionality")
