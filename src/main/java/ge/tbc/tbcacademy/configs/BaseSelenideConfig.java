@@ -22,6 +22,7 @@ public class BaseSelenideConfig {
         browserCapabilities = options;
         browserSize = null;
         timeout=5000;
+        System.out.println("gasdasd");
     }
 
     @AfterMethod(alwaysRun = true)
