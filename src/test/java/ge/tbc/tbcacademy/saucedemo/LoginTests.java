@@ -39,7 +39,7 @@ public class LoginTests extends BaseSelenideConfig {
             " and view the available product images on the inventory page.")
     public void successfulLoginTest() {
         databaseSteps
-                .getUserFromDb(1);
+                .getUserFromDb(STANDARD_USER_ID);
         User user = databaseSteps.getCurrentUser();
         loginPageSteps
                 .fillUsernameField(user.getUserName())
@@ -58,7 +58,7 @@ public class LoginTests extends BaseSelenideConfig {
             "checks that correct error message is displayed and all 'X' icons are visible")
     public void bannedUserLoginTest() {
         databaseSteps
-                .getUserFromDb(2);
+                .getUserFromDb(LOCKED_USER_ID);
         User user = databaseSteps.getCurrentUser();
         loginPageSteps
                 .fillUsernameField(user.getUserName())
@@ -76,7 +76,7 @@ public class LoginTests extends BaseSelenideConfig {
             "all inventory images are loaded correctly")
     public void problematicLoginTest() {
         databaseSteps
-                .getUserFromDb(3);
+                .getUserFromDb(PROBLEM_USER_ID);
         User user = databaseSteps.getCurrentUser();
         loginPageSteps
                 .fillUsernameField(user.getUserName())
@@ -95,7 +95,7 @@ public class LoginTests extends BaseSelenideConfig {
             "and tries to log out")
     public void logOutTest() {
         databaseSteps
-                .getUserFromDb(1);
+                .getUserFromDb(STANDARD_USER_ID);
         User user = databaseSteps.getCurrentUser();
         loginPageSteps
                 .fillUsernameField(user.getUserName())
