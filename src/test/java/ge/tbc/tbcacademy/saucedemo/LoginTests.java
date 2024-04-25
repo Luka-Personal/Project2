@@ -28,6 +28,7 @@ public class LoginTests extends BaseSelenideConfig {
     public void openURL() {
         open(SAUCE_DEMO_URL);
         System.out.println("CONFLICT MAKER");
+        System.out.println("CONFLICT");
     }
 
     @Test(priority = 1, description = "Checks standard user login functionality")

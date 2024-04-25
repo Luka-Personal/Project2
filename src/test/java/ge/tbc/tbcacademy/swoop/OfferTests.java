@@ -37,6 +37,7 @@ public class OfferTests extends BaseSelenideConfig {
     public void openURL() {
         open(SWOOP_URL);
         System.out.println("CONFLICT MAKER");
+        System.out.println("CONFLICT");
     }
 
     @Test(dataProvider = "searchRangeData", dataProviderClass = PriceDataProvider.class, priority = 1, description = "NightClub offers price filtering")
